@@ -17,7 +17,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("1_megsn")
 }],
-"loop": true,
+"loop": false,
 "name": &"idle",
 "speed": 0.0
 }, {
@@ -52,8 +52,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yoq75"]
-radius = 94.0
-height = 480.0
+radius = 82.0
+height = 466.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_yoq75")
@@ -62,9 +62,7 @@ script = ExtResource("1_yoq75")
 scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_0objx")
 animation = &"walk"
-frame = 6
-frame_progress = 0.10375703
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-404, -6)
+position = Vector2(-406, -8)
 shape = SubResource("CapsuleShape2D_yoq75")
